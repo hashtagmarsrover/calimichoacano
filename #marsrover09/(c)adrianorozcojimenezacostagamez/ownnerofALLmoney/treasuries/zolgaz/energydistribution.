@@ -1,0 +1,354 @@
+2.2.1 Electromagnetic (EM) radiation
+EM radiation is the energy transmitted through space in wave form, which can be
+characterized in terms of a wavelength λ or a frequency f.
+2.2.2 RF antenna
+An antenna is a device used to emit and receive radiofrequency (RF) waves. As an
+emitter, it transforms high frequency signals traveling on a conductor into
+electromagnetic (EM) waves in free space.
+2.2.3 Radiofrequency
+Radiofrequency is a frequency within the electromagnetic spectrum used for radio
+transmission. For purposes of this toolkit, the frequency range of interest is 100 kHz
+to 300 GHz, as shown in Table 1.1
+RF Toolkit–BCCDC/NCCEH Section 2 9
+Table 1. Frequency band designations
+FREQUENCY BAND CODE BAND DESCRIPTION
+30 Hz–300 Hz SLF Super Low Frequency
+300 Hz–3000 Hz ULF Ultra Low Frequency
+3 kHz–30 kHz VLF Very Low Frequency
+30 kHz–300 kHz LF Low Frequency
+300 kHz–3 MHz MF Medium Frequency
+3 MHz–30 MHz HF High Frequency
+30 MHz–300 MHz VHF Very High Frequency
+300 MHz–3 GHz UHF Ultra High Frequency
+3 GHz–30 GHz SHF Super High Frequency
+30 GHz–300 GHz EHF Extremely High Frequency
+2.2.4 Wavelength of RF waves
+Distance covered by one complete cycle of the RF wave, as shown in Figure 1.
+Figure 1. Wave Characteristics
+2.2.5 Frequency of RF waves
+Frequency of RF waves is the number of EM waves passing a given point in one second.
+The frequency is expressed in Hertz (Hz).
+2.2.6 Bandwidth of an RF antenna
+The bandwidth of an antenna refers to the range of frequencies over which the antenna
+operates correctly.
+RF Toolkit–BCCDC/NCCEH Section 2 10
+2.2.7 Power density
+Power density is the power per unit area perpendicular to the direction of propagation,
+usually expressed in terms of Watts per square meter (W/m2
+) or milliWatts per
+centimeter-squared (mW/cm2
+).
+2.2.8 Decibel (dB)
+A decibel is a measure of the increase or decrease in power, P, at two points 1 and 2
+expressed in logarithmic form:
+Power Ratio in dB = 10Log �
+P1
+P2
+� (2.1)
+• Decibel-milliwatt (dBm):
+Electrical power unit in decibels referenced to 1milliWatt (mW), as expressed below:
+P(dBm) = 10Log[
+P(mW)
+1 mW ] (2.2)
+• Decibel-Watt (dBW):
+Electrical power unit in decibels referenced to 1Watt (W), as expressed below:
+P(dBW) = 10Log[
+P(W)
+1 W ] (2.3)
+2.2.9 Antenna gain/loss in dBi
+This is the antenna’s gain or loss G over a theoretical isotropic antenna (radiating
+evenly in all directions).
+𝐺𝑎𝑖𝑛 𝐺 (𝑑𝐵) = 10𝐿𝑜𝑔(
+𝑃1
+𝑃2
+) (2.4)
+Where:
+ P1 is the power from the antenna at a point X in space.
+ P2 is the power from a hypothetical isotropic radiator at the same point X.
+Example:
+If an antenna has a gain G of 6 dBi in a certain direction, it means that the power of the
+transmitter is multiplied by 4, as shown below:
+𝑃1
+𝑃2
+= 𝐼𝑛𝑣 [𝐿𝑜𝑔10 � 6
+10�] = 100.6 = 4 (2.5)
+2.2.10 Equivalent isotropically radiated power (EIRP)
+The equivalent isotropic radiated power (EIRP) is defined as the product of the power
+supplied to the antenna 𝐏𝐭 and the antenna gain 𝐆𝐭, both quantities expressed in
+linear terms (not in decibels):
+𝐄𝐈𝐑𝐏 (𝐖) = 𝐏𝐭 (𝐖) .𝐆𝐭 (2.6)
+RF Toolkit–BCCDC/NCCEH Section 2 11
+It is the power that would be radiated by an isotropic source if it had an input power
+equal to 𝐏𝐭 𝐆𝐭.
+In equation (2.6), 𝐄𝐈𝐑𝐏 and 𝐏𝐭 are expressed in units of Watt while 𝐆𝐭 is
+dimensionless.
+In decibels (dimensionless), EIRP is equal to the sum of 𝐏𝐭 (dBW) and 𝐆𝐭 (dBi):
+𝐄𝐈𝐑𝐏(𝐝𝐁𝐖) = 𝐏𝐭(𝐝𝐁𝐖) + 𝐆𝐭(𝐝𝐁𝐢) (2.7)
+Example:
+Suppose 𝐏𝐭 = 20 Watt and the antenna Gain 𝐆𝐭=5
+• In units of Watt, EIRP is equal to: 20 W x 5 = 100 W
+• In units of decibel-power (dimensionless):
+𝐏𝐭 (dBw) = 10 Log (20) = 13.01
+𝐆𝐭 (dBi) = 10 Log (5) = 6.99
+Therefore: 𝐄𝐈𝐑𝐏 (𝐝𝐁𝐖) = 𝟏𝟎 𝐋𝐨𝐠 (𝟐𝟎) + 𝟏𝟎 𝐋𝐨𝐠 (𝟓) = 𝟏𝟑. 𝟎𝟏 + 𝟔. 𝟗𝟗 = 𝟐𝟎 dBw (2.8)
+Note: In equations (2.6) and (2.7), signal losses in cables are assumed negligible.
+2.2.11 Continuous RF wave (CW)
+A continuous radiofrequency wave is a RF signal that is not altered by modulation. It is
+therefore is described by a constant frequency, constant amplitude, and steadily
+advancing phase. In other words, continuous waves are successive oscillations which
+are identical under steady-state conditions.
+2.2.12 Modulation of RF waves
+Wave modulation occurs when some characteristic of the wave is varied.
+a. Pulse modulation:
+In pulse modulation, pulsed waves are emitted in short pulses, i.e., RF energy is
+rapidly switched ON and OFF, as shown in Figure 2.
+Figure 2. Pulsed waves
+RF Toolkit–BCCDC/NCCEH Section 2 12
+For example, Global System for Mobile Communications (GSM) technology uses
+eight slots. The assignment of one slot per user gives rise to the pulsed nature of
+the wave; a GSM phone will only be transmitting 1/8th of the time, i.e., 1/8th duty
+cycle.
+2
+
+Other examples: keyless entry, pulsed NMR systems, analog or digital radar for
+airports, ships, speed detection, military, satellites, electronic test equipment.
+b. Amplitude modulation:
+RF waves are continuously emitted with changing energy (amplitude), as shown in
+Figure 3.
+Figure 3. Amplitude-modulated waves
+Examples of amplitude modulation: AM radio, amateur radio.
+c. Frequency modulation:
+RF waves have constant amplitude with change of frequency in small amounts, as
+shown in Figure 4.
+Figure 4. Frequency-modulated waves
+Examples of frequency modulation: FM radio, amateur radio, data and fax modems,
+telemetry, radar, seismic prospecting and newborn EEG seizure monitoring3
+:
+2.2.13 Electric field
+The region surrounding an electric charge, in which the magnitude and direction of the
+force on a hypothetical test charge is defined at any point. The electric field produces a
+force on electrically charged objects.
+RF Toolkit–BCCDC/NCCEH Section 2 13
+Electric field strength E:
+The magnitude of the electric field vector (in units of Volts/meter, V/m)
+Magnetic field:
+A force field associated with changing electric fields (when electric charges are in
+motion). Magnetic fields exert deflective forces on moving electric charges.
+A magnetic field can be specified in two ways: as magnetic flux density B or
+magnetic field strength H.
+Magnetic flux density B:
+B is the amount of magnetic flux through a unit area taken perpendicular to the
+direction of the magnetic flux, in SI units of Tesla (T) or CGS units of Gauss (G).
+1 Gauss = 10−4Tesla = 100µTesla (2.9)
+Magnetic field strength H:
+H is the magnitude of the magnetic field vector (in units of Amperes/meter, A/m)
+Relation between B and H:
+The two quantities are related by the expression:
+𝐵 = µ𝐻 (2.10)
+Where µ is the magnetic permeability. In a vacuum and in air, as well as in nonmagnetic (including biological) materials, µ has the value 4π 10-7 expressed in
+units of Henry per meter (H.m-1
+). Therefore, a magnetic field can be described by
+either of the two quantities, B or H.
+2.2.14 Power density in the far field
+The power density S is the product of the electric field E and the magnetic field H:
+𝑆 = 𝐸. 𝐻 (2.11)
+In the far field, an estimate of the RF power density can be determined by means of the
+following equation1
+:
+𝑆 = 𝑃𝑡 𝐺𝑚𝑎𝑥𝛿 𝛾
+4𝜋𝑅2 (2.12)
+Where:
+ S is the power density (Watt/m2
+)
+ 𝑃𝑡 is the power of the transmitter (Watt)
+ 𝐺𝑚𝑎𝑥 the maximum Gain of the antenna (dimensionless)
+RF Toolkit–BCCDC/NCCEH Section 2 14
+ 𝛿 the duty cycle of the RF source (dimensionless)
+ 𝛾 a factor that accounts for possible ground reflections (dimensionless)
+ 𝑅 the distance from the RF source (meters)
+2.2.15 Root- mean- square (rms) Electric (E) and magnetic (H) fields
+This is the square root of the average of the squares of the instantaneous E field or H
+field taken over a time interval.
+For example, if n values E1, E2, … En of the electric field are recorded during an
+interval of time, the rms electric field current is calculated as follows:
+𝑟𝑚𝑠 𝐸 = �1
+𝑛 (𝐸1
+2 + 𝐸2
+2 + 𝐸3
+2 + ⋯ 𝐸𝑛
+2) (2.13)
+Similarly, the rms magnetic field is:
+𝑟𝑚𝑠 𝐻 = �1
+𝑛 (𝐻1
+2 + 𝐻2
+2 + 𝐻3
+2 + ⋯ 𝐻𝑛
+2) (2.14)
+2.3 General Properties of RF Waves4
+RF waves are EM waves that:
+• can be found in nature or be man-made
+• propagate in free air and dense media. Their propagation obeys the inverse square
+law at sufficient distance from the antenna (far field).
+• travel at the speed of light (300,000 Km/second)
+• carry energy as they propagate
+• can transfer their energy to matter
+• can be used to carry information
+• can be broadcast outwards to reach many locations or can be formed into beams to
+reach a particular spot
+• can be reflected or refracted when interacting with a dense medium
+• can travel great distances
+• travel in straight lines
+• can pass through walls
+• can be captured by placing a metal rod, a loop, parabolic metal dish, or horn in
+its path.
+2.4 RF Fields
+The electromagnetic field is composed of an electric field E and a magnetic field H.
+They both produce forces on electric charges.
+RF Toolkit–BCCDC/NCCEH Section 2 15
+Static electrical charges produce an electric field while charges in motion produce a
+magnetic field.
+A changing magnetic field can move electric charges to induce currents in its
+interaction with a medium.
+An RF wave is a moving electromagnetic field that has velocity in the direction of travel
+and components of electric field E and magnetic field H arranged at right angles to
+each other (Figure 5). The RF field transmits and receives RF energy through free
+space.
+Figure 5. Schematic representation of the propagation of RF waves
+2.5 RF Waves in the Electromagnetic Spectrum
+RF waves are part of the electromagnetic spectrum in the frequency range of 300 Hertz
+(Hz) to 300 Gigahertz (GHz), as shown below (Figure 6).
+Adapted from: Foster and Moulder (2000).5
+Figure 6. Non-ionizing fields spectrum
+"Electromagnetic wave”, used for educational
+and research purposes, courtesy of Magnet
+Lab, Florida State University
+RF Toolkit–BCCDC/NCCEH Section 2 16
+2.6 Characteristics of RF Fields
+EM waves have a wavelength and a frequency related by:
+λ =
+c
+f 2.15)
+Where:
+ c is the velocity of light = 3 108 m/s= 300,000 Kilometers per second (km/s)
+ f is the frequency in Hertz (or sec-1)
+ λ is the wavelength in meters (m)
+RF waves can propagate through various media, particularly air. Their propagation
+characteristics depend on their frequency f (or wavelengthλ ) but also on the physical
+properties of the absorbing media. The speed of an RF wave in a vacuum is equal to
+the speed of light.
+RF emitters transmit their signals in either Continuous Wave (CW) mode or Pulsed Wave
+(PW) mode.
+In a CW mode, the waves are emitted in a continuous command. The power output of a
+continuous system is expressed in terms of average power.
+In a PW mode, the waves are emitted in short pulses repeated at regular intervals. The
+output of a pulsed system is expressed in terms of peak power. The average power for
+a pulsed system is:
+Pavg = DcPmax (2.16)
+Where:
+ P
+avg
+is the average power in Watts (W)
+ Dc is the duty cycle (dimensionless)
+ Pmax is the peak power in Watts (W)
+2.7 Production of RF: RF Antennas
+RF fields are produced by RF antennas. The role an RF antenna is to focus and intensify
+the initially generated waves. Two types of antennas are usually used for the
+production of RF: stationary antennas and rotating antennas.
+2.7.1 Stationary antennas
+Stationary antennas are fixed antennas. They are widely used for radio broadcasting,
+mobile phones and base stations, FM radios, Wifi systems, cordless phones, GPS, etc.
+The size of the antenna is much larger than the wavelength λ of the emitted waves.
+RF Toolkit–BCCDC/NCCEH Section 2 17
+The antenna focuses the original RF signal into narrow and intense RF beams. The
+focusing potential of the antenna is quantified by its Gain G which is a measure of the
+proportion of the input power that is concentrated in a particular direction.
+The RF waves generated by an antenna have different properties at varying distances
+from the RF source.
+Three regions are commonly considered in the path of RF fields (Figure 7):
+ The Near Field (nf)
+ The Intermediate Field (if) also known as the Fresnel region
+ The Far Field (ff) also known as the Fraunhofer region
+"Near, Intermediate, and Far Fields", used for educational and research purposes, courtesy of International
+Commission on Non-Ionizing Radiation Protection (2009).7
+Figure 7. Propagation of RF waves
+2.7.1.1 The near field
+The near field is the EMF that exists at the RF source and extends to a distance of one
+wavelength from the antenna.
+In this region where the phase differences between waves emitted at different points of
+the antenna are relatively large, the relationship between the Electric Field E and the
+Magnetic Field H is not well defined.
+The near field is divided into two sub-regions:
+• The reactive near field where the strength decreases rapidly with distance from
+the antenna
+• The radiating near field where the average power density remains fairly constant
+at different distances from the antenna, with some localized fluctuations.
+RF Toolkit–BCCDC/NCCEH Section 2 18
+The ideal radiating near field conditions occur at a distance Dnf from the antenna on
+the order of:
+Dnf =
+λ
+2π
+(2.17)
+Where λ is the wavelength of the RF wave.
+For example if the frequency of the RF wave is 900 MHz (i.e., λ =33 cm), the distance
+Dnf is about 5 cm.
+It is assumed that the near field extends to a distance of the order of one wavelength
+λ . In the case of a 900 MHz wave, the near field would extend to a maximum distance
+of 33 cm from the antenna.
+For large antennas with a dimension D (diameter or largest dimension of the antenna)
+larger than one wavelength, the radiating near field region extends from:
+𝜆
+2𝜋
+𝑡𝑜 0.5 𝐷2
+𝜆 (2.18)
+Regarding the power density of the RF waves in the near field and because of the phase
+differences, it is practical to consider that the peak power density all the way through
+the near field is four times the average power density of the antenna S0
+, as follows:
+Snf = 4S0=
+4P
+A (2.19)
+Where:
+- P is the power output of the antenna (Watt)
+- A is the area of the antenna (m2
+)
+In the near field region, it is useful to measure the electric field E (in Volts per
+meter) and the magnetic field H (in Amperes per meter) and compare the values to
+the Limits of Canada Safety Code 6.
+The quantities E and H are related as follows:
+Z =
+E
+H (2.20)
+Where Z is the impedance in air, in units of Ohms (Ω).
+The value of the impedance Z is not constant in the near field. It could be lower than
+377 Ohms if the predominant field is magnetic and larger than 377 Ohms if the
+predominant field is electric.
+RF Toolkit–BCCDC/NCCEH Section 2 19
+2.7.1.2 The intermediate field
+It starts after the near field and ends before the start of the far field. In this region,
+because of the phase differences between waves, the RF power density alternates
+between maximum and minimum levels in a similar way to the near field. Therefore,
+the power density in the intermediate field also follows Equation (2.20).
+The intermediate field extends from 0.5 D²/λ to 2D²/λ where D is the largest linear
+aperture dimension of the antenna and λ the wavelength of the wave.
+2.7.1.3 The far field
+The far field is the electromagnetic field located beyond the near field. It starts at a
+distance Dff from the antenna defined as follows:
+Dff =
+2D2
+λ (2.21)
+(Note that in Canada Safety Code 6 it is recommended taking Dff as 0.5D²/λ meaning
+that the intermediate field could be considered part of the far field).
+In the far field, the electric field E and the magnetic field H are orthogonal and the free
+space impedance is equal to 377 Ω. Therefore, the relation between E and H in the far
+field is:
+𝑍0 = 𝐸
+𝐻 = 377 (2.22)
+Consequently, the power density in the far field is equal to:
+𝑆 = 𝐸. 𝐻 = 𝑬𝟐
+𝟑𝟕𝟕 = 377𝐻2 (2.23)
+In the far field, the measurement of only one quantity, E or H or S, is enough. The
+other quantities can be calculated by means of equation (2.23).
+2.7.2 Rotating antennas
+Rotating antennas transmit RF waves in a given direction part of the time. This type of
+antennas is usually used for search and detection purposes, e.g., rada
